@@ -36,7 +36,7 @@ npm install
 |--------|------|------|--------|
 | `CF_API_TOKEN` | Cloudflare API Token 或全局 Token | ✅ | `your-api-token-here` |
 | `CF_ACCOUNT_ID` | Cloudflare 账户 ID | ✅ | `abc123def456` |
-| `CF_EMAIL` | Cloudflare 账户邮箱 (仅全局 Token 需要) | 条件 | `user@example.com` |
+| `CF_EMAIL` | Cloudflare 账户邮箱 (仅全局 Token 需要) | ✅  | `user@example.com` |
 | `KEEP_VERSIONS` | 保留的版本数量 | ❌ | `5` (默认值) |
 
 #### 获取 API Token

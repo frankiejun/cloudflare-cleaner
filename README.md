@@ -18,7 +18,7 @@
 
 ```bash
 git clone <repository-url>
-cd CloudCleaner
+cd cloudflare-cleaner
 ```
 
 ### 2. 安装依赖
@@ -27,7 +27,6 @@ cd CloudCleaner
 npm install
 ```
 
-> 注意：此项目使用 JavaScript 开发，无需 TypeScript 相关依赖。
 
 ### 3. 配置环境变量
 

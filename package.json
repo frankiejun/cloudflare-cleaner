@@ -1,0 +1,20 @@
+{
+  "name": "cloudflare-cleaner",
+  "version": "1.0.0",
+  "description": "定期清理 Cloudflare Pages 和 Workers 历史部署版本的工具",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:dev": "bash scripts/deploy.sh --env development",
+    "deploy:prod": "bash scripts/deploy.sh --env production",
+    "tail": "wrangler tail",
+    "types": "wrangler types"
+  },
+  "keywords": ["cloudflare", "workers", "cleanup", "automation"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.78.12"
+  }
+}

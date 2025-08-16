@@ -1,0 +1,28 @@
+name = "cloudflare-cleaner"
+main = "src/index.js"
+compatibility_date = "2024-12-19"
+
+# 定时触发器 - 每天2点运行
+[triggers]
+crons = ["0 2 * * *"]
+
+# 环境变量配置
+[vars]
+# 保留的历史版本数量，默认保留最近 5 个版本
+KEEP_VERSIONS = "5"
+
+[observability.logs]
+enabled = true
+
+# 生产环境配置
+[env.production]
+name = "cloudflare-cleaner-prod"
+
+[env.production.vars]
+KEEP_VERSIONS = "3"
+
+
+# 需要在 Cloudflare Dashboard 中配置的敏感环境变量:
+# CF_API_TOKEN - Cloudflare API Token 
+# CF_EMAIL -- Cloudflare account Email
+# CF_ACCOUNT_ID - Cloudflare 账户 ID
